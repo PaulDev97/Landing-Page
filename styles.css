@@ -8,20 +8,20 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
-  background-image: url(img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size:100%;
-  
+body {
+  background:linear-gradient(180deg, #000003 40%, #70717d 100%);
 }
+
+
 
 header {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.65);
- 
+  background: linear-gradient(to right,black, rgb(51, 50, 50));
+  top: 0;
+  position: sticky;
 }
 
 .logo {
@@ -42,11 +42,10 @@ img {
 }
 
 .navbar {
-  width: 50%;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 
@@ -54,10 +53,9 @@ img {
   list-style: none;
   display: inline-block;
   margin: 0 9px;
-  padding: 4px;
+  padding: 3px;
   transition: all 0.3s;
   cursor: pointer;
-  
 }
 
 
@@ -72,7 +70,6 @@ img {
 
 .navbar ul li:hover {
   border-bottom: 1px solid red;
-  
 }
 
 
@@ -80,14 +77,16 @@ img {
 /* Primera seccion */
 .first-section{
   width: 100%;
-  height: 500px;
-  margin-top: 30px;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
+  background-image: url(img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   
 }
 
-.data-section{
+.left-section{
   width: 40%;
   height: 100%;
   display: flex;
@@ -106,28 +105,31 @@ img {
 .btns{
   width: 80%;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 45px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  
 }
 
 .btns button {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 4px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
   cursor: pointer;
   transition: all 0.3s;
-  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.60);
+  color: white;
 }
 
 .btns button:hover {
-  color: red
+  color: rgba(218, 6, 6, 0.945)
+  
 }
+
 
 .image-section{
   width: 50%;
-  height: 80%;
+  height: 90%;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -144,24 +146,47 @@ img {
 
 /* Segunda seccion */
 .second-section{
-  width: 50%;
-  margin: 100px auto;
-  height: 300px;
-  border-radius: 40px;
+  width: 70%;
+  height: 500px;
+  margin: 60px auto;
   display: flex;
-  flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.30);
-  
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.30);
+  background-color: white;
 }
 
+.second-section .empresa {
+  width: 40%;
+  height: 100%;
+}
+
+
+
 .about-us {
-  width: 90%;
-  font-size: 16px;
+  width: 65%;
+  height: 75%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.text {
+  font-size: 15px;
   color: black;
   font-family:Arial, Helvetica, sans-serif;
-  padding: 20px;
+}
+
+.about-tittle{
+  display: flex;
+  justify-content: center;
+  font-family: 'Staatliches', cursive;
+  font-size: 30px;
+}
+
+.about-us .text a{
+  text-decoration: none;
 }
 
 .logos{
@@ -170,10 +195,9 @@ img {
   align-items: center;
   width: 100%;
   padding: 10px;
-  
 }
 
-.second-section img{
+.second-section .logos img{
   width: 60px;
   height: 70px;
   filter: grayscale(80%);
