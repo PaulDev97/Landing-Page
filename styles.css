@@ -77,7 +77,7 @@ img {
 /* Primera seccion */
 .first-section{
   width: 100%;
-  height: 100vh;
+  height: 600px;
   display: flex;
   justify-content: space-between;
   background-image: url(img/fondo.jpg);
@@ -140,6 +140,7 @@ img {
 .image-section img{
   width: 100%;
   height: 300px;
+  margin-top: 35px;
 }
 
 
