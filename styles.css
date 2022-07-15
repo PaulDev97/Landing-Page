@@ -8,10 +8,10 @@ html{
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   background:linear-gradient(180deg, #000003 30%, #70717d 100%);
 }
-
+ */
 
 
 header {
@@ -22,6 +22,7 @@ header {
   background: linear-gradient(to right,black, rgb(51, 50, 50));
   top: 0;
   position: sticky;
+  z-index: 1;
 }
 
 .logo {
@@ -33,7 +34,7 @@ header {
   margin-left: 15px;
 }
 
-img {
+.logo img {
   width: 100%;
   height:100%;
   cursor: pointer;
@@ -155,12 +156,19 @@ img {
   align-items: center;
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.30);
   background-color: white;
+  z-index: 10;
 }
 
 .second-section .empresa {
   width: 40%;
   height: 100%;
 }
+
+.second-section .empresa img{
+  width: 100%;
+  height: 100%;
+}
+
 
 
 
@@ -198,14 +206,54 @@ img {
   padding: 10px;
 }
 
-.second-section .logos img{
+.second-section .about-us .logos img{
   width: 60px;
   height: 70px;
   filter: grayscale(80%);
   cursor: pointer;
   transition: all 0.5s;
+  
 }
 
-.second-section img:hover{
+.second-section .about-us .logos img:hover{
   filter: grayscale(0%);
+}
+
+
+.third-section {
+  width: 100%;
+  height: 500px;
+  background-color: antiquewhite;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+.card{
+  width: 200px;
+  height: 350px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+
+.info-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  padding: 5px;
+}
+
+.info-card p {
+  width: 90%;
+  
+
 }
