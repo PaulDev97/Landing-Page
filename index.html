@@ -8,6 +8,9 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
   </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,12 +26,13 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Cars</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#service">Services</a></li>
         <li><a href="#about">About us</a></li>
       </ul>
     </nav>
     
   </header>
+
 
   <section class="first-section">
 
@@ -48,12 +52,13 @@
     </div>
   </section>
 
-  <section class="second-section">
+
+  <section id="about" class="second-section">
     <div class="empresa">
       <img src="img/empresa.jpg" alt="">
     </div>
 
-    <div id="about" class="about-us">
+    <div class="about-us">
       <h3 class="about-tittle">Sobre Nosotros</h3>
       <h3 class="text">
         Crazy car es una empresa automotriz creada en 1970 en la capital de Argentina. Contamos con las mejores marcas a nivel mundial, brindando la mayor calidad a todos los usuarios. <br>
@@ -72,50 +77,131 @@
   </section>
 
   
-  <section class="third-section">
+  <section  id="service"  class="third-section">
+    
+    <div class="presentation">
+      <h2 class="title-section">Nuestros beneficios</h2>
+      <p>Con la suscripción a Crazy Car podrás obtener servicios extras y descuentos en futuras compras.</p>
 
-    <div class="card">
-        <div>
-            <h1>Imagen</h1>
-           <h3>Beneficio</h3>
-        </div>
-        <div class="info-card">
-            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus numquam labore excepturi repellendus eum harum consequatur
-             </p> 
-
-        </div>
     </div>
 
-    <div class="card">
-        <div>
-            <h1>Imagen</h1>
-           <h3>Beneficio</h3>
-        </div>
+    <div class="cards-container">
+
+      <div class="card">
+        <img class="img-card" src="img/taller.jpg" alt="">
         <div class="info-card">
-            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus numquam labore excepturi repellendus eum harum consequatur
-             </p> 
-
+          <h3>Beneficio 1</h3>
+          <p>Descuento en accesorios y reparaciones del auto.</p> 
         </div>
-    </div>
+      </div>
 
-    <div class="card">
-        <div>
-            <h1>Imagen</h1>
-           <h3>Beneficio</h3>
-        </div>
+      <div class="card">
+        <img class="img-card"  src="img/sorteo.jpg" alt="">
         <div class="info-card">
-            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus numquam labore excepturi repellendus eum harum consequatur
-             </p> 
-
+          <h3>Beneficio 2</h3>
+          <p>Acceso a sorteos y un auto 0km.</p> 
         </div>
+      </div>
+      
+      <div class="card">
+        <img class="img-card"  src="img/seguro.jpg" alt="">
+        <div class="info-card">
+          <h3>Beneficio 3</h3>
+          <p>Descuento en planes de seguro automotor.</p> 
+        </div>
+      </div>
+      
     </div>
     
+    <div class="btn-cont">
+      <button>Unirse al plan</button>
+    </div>
+    
+  </section>
 
-</section>
 
+  <section class="contact-container">
+
+    <div class= "title-contact">
+      <h2>Contactanos</h2>
+    </div>
+      
+    <div class="data">
+      <form class="formulario">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="number" id="telefono" placeholder="Telefono">
+        <textarea placeholder="Escriba su comentario aqui"></textarea>
+        <button class="btn-form">Enviar</button>
+      </form>
+      <div class="contact">
+        <div class="info">
+          <h3>Contacto</h3>
+          <div class="icono">
+            <i class="fa-solid fa-location-dot"></i><p>San José, California, EE.UU.
   
   
+            </p>
+          </div>
+          <div class="icono">
+            <i class="fa-solid fa-envelope"></i><p>crazycar_51@gmail.com</p>
+          </div>
+          <div class="icono">
+            <i class="fa-solid fa-phone"></i><p>666-666-666</p>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+  
+        </div>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.356542278954!2d-121.95404082447386!3d37.31878054772269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f7de942d40264ee!2zMzfCsDE5JzA2LjMiTiAxMjHCsDU3JzAzLjkiVw!5e0!3m2!1ses!2sar!4v1658176159275!5m2!1ses!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
 
+    </div>
+    
+  </section>
+  
+
+  <footer>
+
+    <div class="download">
+      <h3>Crazy car</h3>
+      <div>
+        <a href="#"><img class="play" src="img/play.png" alt=""></a>
+        <a href="#"><img class="apple" src="img/app.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="info-footer">
+      <h3>Mas informacion</h3>
+      <ul>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Terminos y condiciones</a></li>
+        <li><a href="#">Politica de privacidad</a></li>
+        <li><a href="#">Ayuda y asistencia</a></li>
+      </ul>
+    </div>
+
+    <div class="pay">
+      <h3>Metodos de Pago</h3>
+      <div class="payment-card">
+        <img class="visa" src="img/visa.png" alt="">
+        <img class="master" src="img/master.png" alt="">
+        <img class="exp" src="img/express.png" alt="">
+      </div>
+    </div>
+
+
+
+
+
+  </footer>
+  
+  
 
 
 </body>
