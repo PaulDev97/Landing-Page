@@ -42,6 +42,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -54,6 +55,13 @@ header {
   cursor: pointer;
 }
 
+.checkbutton{
+  display: none;
+}
+
+#check {
+  display: none;
+}
 
 .navbar ul li a {
   text-transform: uppercase;
@@ -75,6 +83,10 @@ header {
 #check {
   display: none;
 }
+
+
+
+
 
 
 
@@ -654,7 +666,10 @@ footer .info-footer ul li a:hover {
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 57249193ee8624ba3a89eb8bf2500246c2db5367
 @media (max-width: 360px){
 
   /* Menu Responsive */
@@ -773,3 +788,7 @@ footer .info-footer ul li a:hover {
 
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57249193ee8624ba3a89eb8bf2500246c2db5367
