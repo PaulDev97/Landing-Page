@@ -819,16 +819,21 @@ footer .info-footer ul li a:hover {
   /* Tercera seccion */
   .third-section {
     width: 360px;
-    height: 620px;
+    height: 520px;
     margin: 60px auto;
     padding: 20px;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .title-section {
     width: 100%;
     font-size: 25px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -849,7 +854,7 @@ footer .info-footer ul li a:hover {
   
   
   .cards-container{
-    width: 350px;
+    width: 320px;
     margin:40px  auto;
   }
   
@@ -916,7 +921,7 @@ footer .info-footer ul li a:hover {
   }
   
   .formulario {
-    width: 360px;
+    width: 340px;
     height: 480px;
     margin: 0 20px;
     display: flex;
